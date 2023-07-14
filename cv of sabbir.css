@@ -118,6 +118,7 @@ hr{
     color: black;
     width: 100%;
   }
+ 
   .profilebio{
     height: auto;
     width: 100%;
@@ -130,5 +131,8 @@ hr{
   .ref{
     flex-direction: column;
     
+  }
+  .bio{
+    text-align: center;
   }
 }
