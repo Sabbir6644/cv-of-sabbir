@@ -10,12 +10,13 @@ body{
 .main{
   display: flex;
   max-width: 800px;
-  max-height: 830px;
+  max-height: 1000px;
   margin: 0 auto;
   box-sizing: border-box;
 }
 
 .container{
+  height: auto;
   width: 60%;
   background-color: rgb(205, 255, 255);
   margin: 0 auto;
@@ -23,6 +24,7 @@ body{
   box-sizing: border-box;
 }
 .container2{
+  height: auto;
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -136,3 +138,4 @@ hr{
     text-align: center;
   }
 }
+/* Medium Device */
