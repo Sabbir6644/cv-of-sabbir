@@ -5,80 +5,66 @@
 
 body{
   font-family: 'Times New Roman';
-  display: flex;
+
 }
 .main{
   display: flex;
-  width: 800px;
-  height: 830px;
+  max-width: 800px;
+  max-height: 830px;
   margin: 0 auto;
   box-sizing: border-box;
-  background-color: rgb(54, 54, 53);
-  
-  
 }
+
 .container{
-  width: 500px;
-  /* height: 820px; */
+  width: 60%;
   background-color: rgb(205, 255, 255);
   margin: 0 auto;
-  padding: 20px;
- flex: 1;
+  padding: 20px 10px;
   box-sizing: border-box;
-  
 }
 .container2{
-  width: 300px;
-  /* height: 820px; */
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   color: white;
   margin: 0 auto;
-  flex: 1;
   box-sizing: border-box;
+  
   
  
 }
 
 .profilebio{
   background-color: rgb(48, 217, 255);
-  box-sizing: border-box;
   height: 40%;
 }
 
 .bio{
-  float: left;
-  padding: 20px;
+  padding: 10px;
   color: black;
   background-color: rgb(48, 217, 255);
-  
- 
-  
 }
+
 .bio h1{
   font-size: 30px;
- 
 }
 .profile-image{
   width: 150px;
   height: 150px;
   border: 3px solid white;
   border-radius: 50%;
-  margin-left: 70px;
+  margin-left: 80px;
   margin-top: 35px;
-  
-  
-
 }
 
 .cle{
-  box-sizing: border-box;
   height: 60%;
+  background-color: rgb(54, 54, 53);
 }  
-.contact{
- background-color: rgb(54, 54, 53);
- padding-top: 5px;
- padding-left: 20px;
- padding-right: 20px; 
- padding-bottom: 10px;
+.contact, .education, .language{
+  padding: 10px;
+
+
 }
 .contact a{
   text-decoration: none;
@@ -90,25 +76,6 @@ body{
 
 }
 
-.education{
-  background-color: rgb(54, 54, 53);
-  padding-left: 20px;
-  padding-right: 20px; 
-  padding-bottom: 5px;  
-}
-
-.language{
-  background-color: rgb(54, 54, 53);
-  padding-left: 20px;
-  padding-right: 20px; 
-  padding-bottom: 6px;
-  
-  
-}
-
-.div-clear{
-  clear: both;
-}
 hr{
   border: solid black 2px;
   width: 100%;
@@ -125,35 +92,42 @@ hr{
   border-bottom: none;
 }
 
-
-.ref1{
-  box-sizing: border-box;
-  width: 55%;
-  float: left;
+.ref{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 10px;
 }
 
-.ref2{
-  box-sizing: border-box;
-  width: 45%;
-  float: left;
-}
-.content{
-
-}
-.left-div{
-width: 30%;
-float: left;
-
-
-}
-.left-div h3{
-  color: blue;
-}
-.right-div{
-width: 70%;
-float: left;
-}
-.right-div p{
-  text-align: justify;
-  
+/* Small Device Style */
+@media screen and (max-width:576px) {
+  .main{
+    flex-direction: column;
+    max-height: 1600px;
+  }
+  .container, .container2{
+    width: 100%;
+  }
+  .cle{
+    background-color: rgb(48, 217, 255);
+    color: black;
+    width: 100%;
+  }
+  .profilebio{
+    height: auto;
+    width: 100%;
+  }
+  .profile-image{
+    margin-right: -70px;
+    margin-top: 20px;
+  }
+  .container{
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .ref{
+    flex-direction: column;
+    
+  }
 }
